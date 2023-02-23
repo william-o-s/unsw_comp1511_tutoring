@@ -1,6 +1,7 @@
 # Personal files
 personal/
 *.pptx
+*.exe
 
 # Week 1
 part3/
