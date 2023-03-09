@@ -22,22 +22,39 @@ void bad_scan(void) {
 }
 
 void scan_temperature_long(void) {
+    int input;
+    int result = scanf("%d", &input);
+    int max_value = input;
 
-    // TODO: convert temperature code here
+    while (result == 1) {
+        if (input > max_value) {
+            max_value = input;
+        }
+
+        result = scanf("%d", &input);
+    }
+
+    printf("Max value: %d\n", max_value);
 }
 
 void scan_temperature_short(void) {
+    int input;
+    int max_value;
+    scanf("%d", &max_value);
 
-    // TODO: try to make above code shorter
-    // NOTE: can only print temperature with shorter version
+    while (scanf("%d", &input) == 1) {
+        if (input > max_value) {
+            max_value = input;
+        }
+    }
 }
 
 int main(void) {
-    bad_scan();
+    // bad_scan();
 
     // Because CTRL+D is EOF, we can only have one of these at a time
-    scan_temperature_long();
-    // scan_temperature_short();
+    // scan_temperature_long();
+    scan_temperature_short();
 
     return 0;
 }

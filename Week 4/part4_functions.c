@@ -15,6 +15,12 @@ struct colour {
 
 struct colour make_colour(int red, int green, int blue) {
     // TODO: initialise a struct colour
+    struct colour new_colour;
+    new_colour.red = red + 1;
+    new_colour.green = green;
+    new_colour.blue = blue;
+
+    return new_colour;
 }
 
 int main(void) {

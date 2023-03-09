@@ -12,31 +12,65 @@ void print_array(void) {
     printf("\n--- NOW DOING: print_array() ---\n");
 
     // TODO: Make an array
+    int array[DEFAULT_SIZE] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
     // TODO: Loop over array
+    int index = 0;
+    while (index < DEFAULT_SIZE) {
+        // TODO: Print element in array
+        printf("%d ", array[index]);
 
-    // TODO: Print element in array
+        index++;
+    }
+    printf("\n");
 }
 
 void odd_only(void) {
     printf("\n--- NOW DOING: odd_only() ---\n");
 
-    // TODO: follow checklist on
-    // https://cgi.cse.unsw.edu.au/~cs1511/23T1//tut/04/questions
+    int array[DEFAULT_SIZE] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    int index = 0;
+    while (index < DEFAULT_SIZE) {
+        if (array[index] % 2 == 0) {
+            array[index] += 1;
+        }
+
+        index++;
+    }
+
+    int diff_index = 0;
+    while (diff_index < DEFAULT_SIZE) {
+        printf("%d ", array[diff_index]);
+
+        diff_index++;
+    }
+    printf("\n");
 }
 
 void copy_array(void) {
     printf("\n--- NOW DOING: copy_array() ---\n");
 
-    // TODO: follow checklist on
-    // https://cgi.cse.unsw.edu.au/~cs1511/23T1//tut/04/questions
+    double array[SMALL_SIZE] = { 1.2, 3.3, 4.5 };
 }
 
 void largest_character(void) {
     printf("\n--- NOW DOING: largest_character() ---\n");
 
-    // TODO: follow checklist on
-    // https://cgi.cse.unsw.edu.au/~cs1511/23T1//tut/04/questions
+    char array[STRING_SIZE] = { '1', '2', '3', '4', '5', '6', '7', '8' };
+
+    char largest_character = array[0];
+
+    int index = 0;
+    while (index < STRING_SIZE) {
+        if (array[index] > largest_character) {
+            largest_character = array[index];
+        }
+
+        index++;
+    }
+
+    printf("Largest character: %c\n", largest_character);
 }
 
 int main(void) {

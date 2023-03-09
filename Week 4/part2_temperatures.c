@@ -9,13 +9,23 @@
 int main(void) {
 
     // TODO: Declare and initialise array
+    int array[NUM_DAYS];
 
     // TODO: Read in values
+    for (int i = 0; i < NUM_DAYS; i++) {
+        scanf("%d", &array[i]);
+    }
 
     // TODO: Find max values
+    int max_value = array[0];
+    for (int i = 0; i < NUM_DAYS; i++) {
+        if (array[i] > max_value) {
+            max_value = array[i];
+        }
+    }
 
     // TODO: Print max temp
-    // printf("Max temp is: %d\n", ???);
+    printf("Max temp is: %d\n", max_value);
 
     return 0;
 }
