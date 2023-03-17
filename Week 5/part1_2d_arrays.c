@@ -6,6 +6,9 @@
 
 #define SIZE 5
 
+#define WON 1
+#define LOST 0
+
 // Function Prototype
 int did_player_win(char player, char board[SIZE][SIZE]);
 
@@ -46,7 +49,56 @@ int main(void) {
 // Determines whether a given player has won the game of tictactoe
 // by getting SIZE tokens in a row, in any direction.
 int did_player_win(char player, char board[SIZE][SIZE]) {
-    // TODO Implement this function.
+    // Check the left diagonal
+    int left_diagonal_flag = WON;
+    for (int index = 0; index < SIZE; index++) {
+        if (board[index][index] != player) {
+            left_diagonal_flag = LOST;
+        }
+    }
+    if (left_diagonal_flag == WON) {
+        return WON;
+    }
+
+    // Check the right diagonal
+    int right_diagonal_flag = WON;
+    for (int index = 0; index < SIZE; index++) {
+        if (board[index][SIZE - index - 1] != player) {
+            right_diagonal_flag = LOST;
+        }
+    }
+    if (right_diagonal_flag == WON) {
+        return WON;
+    }
+
+    // Check the horizontals
+    for (int row_index = 0; row_index < SIZE; row_index++) {
+        int horizontal_flag = WON;
+        for (int col_index = 0; col_index < SIZE; col_index++) {
+            if (board[row_index][col_index] != player) {
+                horizontal_flag = LOST;
+            }
+        }
+
+        if (horizontal_flag == WON) {
+            return WON;
+        }
+    }
+
+    // Check the verticals
+    for (int col_index = 0; col_index < SIZE; col_index++) {
+        int vertical_flag = WON;
+        for (int row_index = 0; row_index < SIZE; row_index++) {
+            if (board[row_index][col_index] != player) {
+                vertical_flag = LOST;
+            }
+        }
+
+        if (vertical_flag == WON) {
+            return WON;
+        }
+    }
+
     return 0;
 
     // EXTRA: do you know how 2D arrays are stored in memory?

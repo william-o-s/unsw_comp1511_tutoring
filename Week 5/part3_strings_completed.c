@@ -15,7 +15,7 @@ void print_string(char *string) {
     }
     printf("\n");
 
-    // EXTRA: when printing a string, do you need to know
+    // HINT: when printing a string, do you need to know
     //  its length?
 }
 

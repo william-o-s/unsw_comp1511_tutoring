@@ -27,16 +27,16 @@ int main(void) {
     }
 
     printf("Values before square_array: ");
-    // TODO: is this correct?
-    print_array(size, inputs[MAX_SIZE]);
+    // NOTE: don't use indexing when passing arrays!
+    print_array(size, inputs);
 
     //call square, copying the value of input into `int x`
-    // TODO: is this correct?
-    square_array(size, inputs[MAX_SIZE]);
+    // NOTE: don't use indexing when passing arrays!
+    square_array(size, inputs);
 
     printf("Values after square_array:  ");
-    // TODO: is this correct?
-    print_array(size, inputs[MAX_SIZE]);
+    // NOTE: don't use indexing when passing arrays!
+    print_array(size, inputs);
 
     return 0;
 }
@@ -47,7 +47,7 @@ int square(int x) {
 }
 
 //prints out an array all pretty like
-void print_array(int length, int array[length]) {
+void print_array(int length, int array[MAX_SIZE]) {
     printf("[");
     for (int i = 0; i < length; i++) {
         printf("%3d", array[i]);
@@ -59,7 +59,7 @@ void print_array(int length, int array[length]) {
 }
 
 // Squares all elements of an array, modifying the array in the process.
-void square_array(int length, int array[length]) {
+void square_array(int length, int array[MAX_SIZE]) {
     for (int i = 0; i < length; i++) {
         array[i] = square(array[i]);
     }

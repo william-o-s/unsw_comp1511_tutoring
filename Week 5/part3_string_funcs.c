@@ -60,25 +60,44 @@ int is_vowel(char c) {
 
 // Functions to implement:
 
-// 1. returns the number of lowercase letters in `char *string`
+// 1. returns the number of lowercase letters in
+// `char *string`
 int count_lowercase(char *string) {
-    return 0;
+    int total_lowercase = 0;
+    for (int index = 0; string[index] != '\0'; index++) {
+        if (is_lowercase(string[index])) {
+            total_lowercase++;
+        }
+    }
+
+    return total_lowercase;
 }
 
-// 2. modifies `char *string` by converting all its vowels to uppercase
+// 2. modifies `char *string` by converting all its
+// vowels to uppercase
 void make_vowels_uppercase(char *string) {
-    return;
+    for (int index = 0; string[index] != '\0'; index++) {
+        if (is_vowel(string[index])) {
+            string[index] = to_uppercase(string[index]);
+        }
+    }
 }
 
-// 3.. shortens a string so that it ends after the first word
+// 3. shortens a string so that it ends after the
+// first word
 // e.g. "This is a sentence" should turn into:
 //      "This"
 // 
 // (hint. what defines when a string ends?)
 void delete_following_words(char *string) {
-    return;
+    int index = 0;
+    while (string[index] != ' ') {
+        index++;
+    }
+
+    string[index] = '\0';
 }
 
-int main (void) {
+int main(void) {
     return 0;
 }
