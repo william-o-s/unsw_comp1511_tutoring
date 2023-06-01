@@ -9,6 +9,6 @@ int main(void) {
     // line.
     // What does this imply about what '\n' does?
     printf("Hello World\n");
-    
+
     return 0;
 }
