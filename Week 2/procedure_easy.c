@@ -21,7 +21,7 @@ int main(void) {
 
 void run_program(void) {
     // TODO: Complete this pseudocode.
-    
+
     // TODO: int n = 0
     // TODO: print "Enter a number"
     // TODO: scan a number into n
