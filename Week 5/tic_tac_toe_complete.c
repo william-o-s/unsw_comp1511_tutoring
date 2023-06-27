@@ -68,9 +68,9 @@ int main(void) {
         printf("Nobody has won the third board!\n");
     }
 
-    if (did_player_win('X', o_wins_board)) {
+    if (did_player_win('X', x_wins_diag)) {
         printf("X won the fourth board!\n");
-    } else if (did_player_win('O', o_wins_board)) {
+    } else if (did_player_win('O', x_wins_diag)) {
         printf("O won the fourth board!\n");
     } else {
         printf("Nobody has won the fourth board!\n");
