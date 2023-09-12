@@ -1,6 +1,6 @@
 // Prints a happy face
 // William Setiawan (z5388080)
-// on 2/6/2023
+// on 14/9/2023
 
 #include <stdio.h>
 

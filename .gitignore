@@ -3,5 +3,8 @@ personal/
 *.pptx
 *.exe
 
+# WIP Folders
+wip/
+
 # Week 10
 1511 COMPetition.xlsx
