@@ -1,0 +1,16 @@
+INSTRUCTIONS:
+Convert the flowchart to text-based pseudo-code!
+
+-----
+
+start program
+print "Do you like puns?"
+scan input
+if no:
+    print "That's pUnfortunate."
+else:
+    print "Do you like computers..."
+    if no:
+        print "I hope the..."
+    else:
+        print "You will be glad..."
