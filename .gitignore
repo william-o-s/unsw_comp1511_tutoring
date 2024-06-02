@@ -1,5 +1,6 @@
 # Personal files
 personal/
+*.code-workspace
 *.pptx
 *.exe
 
