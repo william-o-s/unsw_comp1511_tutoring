@@ -1,0 +1,11 @@
+print "Do you like puns?"
+scan input
+if yes:
+	print "Do you like computers more than books?"
+	scan input
+	if yes:
+		print "You will be glas to C this pun, then."
+	else:
+		print "I hope the police book you fro saying that"
+else:
+	print "That's pUnfortunate."
