@@ -26,10 +26,10 @@ int main(void) {
     char my_string[MAX_CHARS] = "Hello World!";
 
     printf("count_lowercase(my_string) = %d\n", count_lowercase(my_string));
-
+    
     make_vowels_uppercase(my_string);
     printf("make_vowels_uppercase(my_string) = %d", my_string);
-
+    
     delete_following_words(my_string);
     printf("delete_following_words(my_string) = %d", my_string);
 
@@ -84,10 +84,10 @@ char to_uppercase(char c) {
 int is_vowel(char c) {
     char lower_c = to_lowercase(c);
 
-    return lower_c == 'a'
+    return lower_c == 'a' 
         || lower_c == 'e'
-        || lower_c == 'i'
-        || lower_c == 'o'
+        || lower_c == 'i' 
+        || lower_c == 'o' 
         || lower_c == 'u';
 }
 
@@ -109,7 +109,7 @@ void make_vowels_uppercase(char string[MAX_CHARS]) {
 // shortens a string so that it ends after the first word
 // e.g. "This is a sentence" should turn into:
 //      "This"
-//
+// 
 // (hint. what defines when a string ends?)
 void delete_following_words(char string[MAX_CHARS]) {
     return;

@@ -3,7 +3,7 @@
 // This program was written by YOUR-NAME (ZID)
 // on DATE
 //
-// This program is a simple game that allows the user to build a galaxy.
+// This program is a simple game that allows the user to build a galaxy. 
 // The user can place stars, planets, and nebulae in the galaxy.
 
 #include <stdio.h>
@@ -32,22 +32,19 @@ int main(void) {
     // TODO: Initialize the galaxy
 
     // TODO: Place the planets and nebulae in the galaxy
-    printf("How many planets and nebulae are there? ");
-
-    // TODO: Place the planets and nebulae in the galaxy
-    printf("Enter the position and points of the planet(s) and nebula(e): ");
-
-    // TODO: Place the stars in the galaxy
-    printf("Enter the position and points of the star(s): \n");
+    printf("Enter planets and nebulae:\n");
 
     // TODO: Place the player in the galaxy
     printf("Enter the starting position of the player: ");
+
+    // TODO: Place the stars in the galaxy
+    printf("Enter the position and points of the star(s):\n");
 
     // TODO: Print the map
 }
 
 // Function prints the map of the galaxy
-//
+// 
 // Parameters:
 // - galaxy: the 2D array representing the galaxy
 //
